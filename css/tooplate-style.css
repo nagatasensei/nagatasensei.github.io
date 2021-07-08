@@ -16,6 +16,7 @@ body {
     height: 100%;
     position: relative;
     background: #222222;
+    opacity: 0.6;
 }
 
 #preload-01 { background: url(../img/constructive_bg_01.jpg) no-repeat -9999px -9999px; }
@@ -46,8 +47,8 @@ p {
 p:last-child { margin-bottom: 0; }
 
 .tm-bg-transparent-black {
-    background-color: rgba(0,0,0,0.25);    
-    padding: 30px;
+    background-color: rgba(0,0,0,0.65);    
+    padding: 40px;
 }
 
 .tm-contact-box-pad { padding: 60px 55px; }
