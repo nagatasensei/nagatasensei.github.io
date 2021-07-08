@@ -556,6 +556,14 @@ footer a { color: white; }
             transition: all 0.3s 1s ease-out;
 }
 
+.myimg{
+  width:300px;
+  height:300px;
+  object-fit:cover;
+  border-radius:50%;
+}
+
+
 /* JavaScript Turned Off */
 .no-js #loader-wrapper {
     display: none;
