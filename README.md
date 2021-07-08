@@ -1,2 +1,3 @@
 # nagatasensei.github.io
-Nagata Sensei Repository
+Nagata Sensei Site Repository
+- Classes content will be available here.
