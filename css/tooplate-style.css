@@ -559,11 +559,11 @@ footer a { color: white; }
 }
 
 .myimg{
-  width:200px;
-  height:200px;
+  width:250px;
+  height:250px;
   object-fit:cover;
   border-radius:50%;
-  align-content: center;
+  align: center;
 }
 
 
