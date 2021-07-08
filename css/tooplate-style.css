@@ -19,7 +19,7 @@ body {
 }
 
 #preload-01 { background: url(../img/constructive_bg_01.jpg) no-repeat -9999px -9999px; }
-#preload-02 { background: url(../img/constructive_bg_02.jpg) no-repeat -9999px -9999px; }
+#preload-02 { background: url(../img/lukas-blazek-mcSDtbWXUZU-unsplash.jpg) no-repeat -9999px -9999px; }
 #preload-03 { background: url(../img/constructive_bg_03.jpg) no-repeat -9999px -9999px; }
 #preload-04 { background: url(../img/constructive_bg_04.jpg) no-repeat -9999px -9999px; }
 
@@ -569,4 +569,8 @@ footer a { color: white; }
 /* JavaScript Turned Off */
 .no-js #loader-wrapper {
     display: none;
+}
+
+.bakimg{
+    opacity: 0.5;
 }
