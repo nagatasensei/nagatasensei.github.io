@@ -113,7 +113,8 @@ http://www.tooplate.com/view/2102-constructive
 							<div class="row tm-page-4-content">
 								<div class="col-md-6 col-sm-12 tm-contact-col">
 									<div class="contact_message">
-										<form action="https://formsubmit.co/leandro.nagata@edu.sc.senai.br" method="post" class="contact-form">
+										<form action="https://formsubmit.co/leandro.nagata@edu.sc.senai.br" method="post" class="contact-form" enctype=multipart/form-data>
+											<input type="hidden" name="_next" value="https://prof.leandronagata.com.br/mygame.html">
 											<div class="form-group">
 												<input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Nome" required="">
 											</div>
@@ -125,13 +126,13 @@ http://www.tooplate.com/view/2102-constructive
 											</div>
 											
 											<div class="form-group">
-												<input type="file" name="attachment" accept="image/png, image/jpeg">
+												<input type="file" name="attachment" <!--accept="image/png, image/jpeg, "--> accept="application/vnd.ms-powerpoint">
 											</div>
-											<button type="submit" class="btn tm-btn-submit tm-btn ml-auto">Submit</button>
+											<button type="submit" class="btn tm-btn-submit tm-btn ml-auto">Enviar</button>
 										</form>
 									</div>
 								</div>
-								<div class="col-md-6 col-sm-12 tm-contact-col">
+								<!--<div class="col-md-6 col-sm-12 tm-contact-col">
 									<div class="tm-address-box">
 										<p>Aliquam interdum, nisl sedd faucibus tempor, massa velit laoreet ipsum, et faucibus sapien magna at enim. Suspendisse a dictum tortor.</p>
 										<p>Curabitur venenatis leo in augue convallis, vulputate sollicitudin ex maximus.</p>
@@ -141,7 +142,7 @@ http://www.tooplate.com/view/2102-constructive
 											vitae sagis justo 11000
 										</address>
 									</div>
-								</div>
+								</div>-->
 							</div>
 						</div>
 					</section>
