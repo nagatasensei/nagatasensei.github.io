@@ -374,6 +374,16 @@ p:last-child { margin-bottom: 0; }
     background: transparent;    
 }
 
+
+.tm-section-center {
+    max-width: 100%;
+    width: auto;
+    background: transparent;
+    margin: auto;    
+}
+
+
+
 .col-md-6.tm-contact-col { margin-bottom: 0; }
 
 .tm-img-slider { max-width: 940px; }
