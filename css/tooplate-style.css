@@ -756,3 +756,12 @@ model-viewer {
   width: 800px;
   height: 600px;
 }
+
+grid-ish {
+    display:  flex;
+    flex-wrap: wrap;
+}
+
+.grid-ish > *{ 
+flex: 1 1 100%;
+ }
