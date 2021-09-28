@@ -1,0 +1,38 @@
+//css
+
+body {
+	background: lightblue;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  /*background-color: green;*/
+  font-family: 'Roboto', sans-serif;
+  font-size: 24;
+
+}
+
+div {
+  /*background-color: rgba(0, 128, 0, 0.1);*/
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  /*width: 70px;
+  height: 300px;*/
+  /*border: 1px solid #c3c3c3;*/
+}
+
+p {
+  /*background-color: yellow;*/
+  font-family: 'Roboto', sans-serif;
+}
+
+table {
+	/*background-color: rgba(0, 110, 0, 0.2);*/
+	padding-right: auto;
+	padding-left: auto;
+	font-family: 'Roboto', sans-serif;
+
+	
+}
