@@ -46,3 +46,14 @@ table {
 	
 }
 
+a:hover{
+  color:hotpink;
+}
+
+a:visited{
+  color:indigo;
+}
+
+a:link {
+  color: rgb(58, 11, 11);
+}
