@@ -1,14 +1,22 @@
-//css
+/*css*/
 
 body {
 	background: lightblue;
 	font-family: 'Roboto', sans-serif;
+  padding: 1% 5%; 
+  /*margin: 10em auto;
+  /*outline: 1px solid red;*/
+  /*width: 150px;
+  height: 150px;*/
+  border: 20;
+  align-items: center;
 }
 
 h1 {
   /*background-color: green;*/
   font-family: 'Roboto', sans-serif;
   font-size: 24;
+  padding: 5px;
 
 }
 
@@ -30,9 +38,11 @@ p {
 
 table {
 	/*background-color: rgba(0, 110, 0, 0.2);*/
-	padding-right: auto;
-	padding-left: auto;
+	/*padding-right: auto;
+	padding-left: auto;*/
 	font-family: 'Roboto', sans-serif;
+  width: auto;
 
 	
 }
+
