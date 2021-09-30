@@ -16,7 +16,7 @@ body {
     height: 100%;
     position: relative;
     background: #222222;
-    opacity: 0.2;
+    opacity: 0.5;
 }
 
 #preload-01 { background: url(../img/constructive_bg_01.jpg) no-repeat -9999px -9999px; }
