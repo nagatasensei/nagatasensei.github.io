@@ -16,7 +16,7 @@ body {
     height: 100%;
     position: relative;
     background: #222222;
-    opacity: 0.6;
+    opacity: 0.2;
 }
 
 #preload-01 { background: url(../img/constructive_bg_01.jpg) no-repeat -9999px -9999px; }
@@ -192,7 +192,8 @@ a {	color: #FFF;  }
 
 a:hover { color: #33ccff; }
 
-h1,h2,h3 { font-weight: 300; }
+h1,h2,h3 { font-weight: 300;
+    text-align:center; }
 
 p {
     font-size: 1rem;
@@ -765,3 +766,4 @@ grid-ish {
 .grid-ish > *{ 
 flex: 1 1 10em;
  }
+
