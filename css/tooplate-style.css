@@ -197,7 +197,8 @@ h1,h2,h3 { font-weight: 300;
 
 p {
     font-size: 1rem;
-    line-height: 2.2;
+    line-height: 1.5;
+    text-align: justify;
 }
 
 p:last-child { margin-bottom: 0; }
@@ -393,6 +394,7 @@ p:last-child { margin-bottom: 0; }
 .tm-icon-media {
   margin-right: 1.5rem;
   margin-bottom: 0;
+  align-self: center;
 }
 
 address { font-size: 1rem; }
