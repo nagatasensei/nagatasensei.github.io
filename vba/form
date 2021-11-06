@@ -1,0 +1,73 @@
+Private Sub CommandButton1_Click()
+Dim idade As Integer
+Dim nome As String, setor As String
+'Error handling, quando o erro no preen
+On Error GoTo Aqui
+
+'Define header e linha vaga como posições chave para preencher cadastro.
+
+header = Range("A1")
+linha_vaga = Range("A2")
+
+'Identifica de onde vem cada uma das informações das variáveis
+nome = TextBox1.Value
+idade = TextBox2.Value
+setor = ComboBox1.Value
+
+
+'Define a variável linha como header
+linha = header
+
+'Este teste que realiza faz uma verificação se a célula selecionada
+'é a A1, senão estiver lá, ele posiciona para lá.
+If ActiveCell Is Range("A1") Then
+header.Select
+
+Else
+ActiveCell.End(xlToLeft).Select
+ActiveCell.End(xlToLeft).Select
+ActiveCell.End(xlUp).Select
+ActiveCell.End(xlUp).Select
+
+End If
+
+'Teste se a linha 2, após o cabeçalho está vazia.
+'Se estiver ela preenche com os dados, senão
+'ela vai para a última linha vaga na tabela
+
+If linha_vaga = "" Then
+Range("A2").Select
+linha = Range("a2").Row
+
+Else
+
+linha = Range("A1").End(xlDown).Row + 1
+End If
+
+'Preenche os valores.
+Cells(linha, 1) = TextBox1
+Cells(linha, 2) = idade
+Cells(linha, 3) = setor
+
+'Exibe a mensagem de conclusão da tarefa.
+MsgBox "CONCLUÍDO", vbInformation, "Cadastro Concluído com sucesso"
+
+'Descarrega o formulário.
+Unload formulario
+
+Exit Sub
+Aqui:
+MsgBox "Verifique os dados e tente novamente.", vbExclamation, "ATENÇÃO!!!"
+
+End Sub
+
+Private Sub CommandButton2_Click()
+Unload formulario
+End Sub
+
+Private Sub UserForm_Initialize()
+
+last_line = Sheets("Suporte").Range("A1").End(xlDown).Row
+ComboBox1.RowSource = "Suporte!A1:A" & last_line
+
+End Sub
