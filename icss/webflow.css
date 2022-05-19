@@ -209,11 +209,15 @@ h1 {
   font-size: 38px;
   line-height: 44px;
   margin-top: 20px;
+  text-align: center;
+  color: orangered;
 }
 h2 {
   font-size: 32px;
   line-height: 36px;
   margin-top: 20px;
+  color: lightcyan;
+  text-align: center;
 }
 h3 {
   font-size: 24px;
