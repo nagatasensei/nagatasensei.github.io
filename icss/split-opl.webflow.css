@@ -4,14 +4,17 @@ a {
 }
 
 a:hover{
-  color: yellowgreen;
+  color: darkcyan;
   
 }
 
+li{
+  color: orangered;
+}
 .body {
   display: block;
   overflow: scroll;
-  max-height: 100vh;
+  max-height: 80vh;
   background-color: #0b1c2f;
   font-family: Inter, sans-serif;
 }
@@ -21,8 +24,8 @@ a:hover{
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-right: 0px;
-  padding-left: 0px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .columns {
@@ -30,8 +33,8 @@ a:hover{
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
-  max-height: 100vh;
+  height: 80vh;
+  max-height: 80vh;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -61,24 +64,26 @@ a:hover{
 }
 
 .bio {
-  margin-bottom: 40px;
-  font-family: Lora, sans-serif;
-  color: #848d96;
-  font-size: 21px;
-  line-height: 140%;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: #AFAFAF;
+  font-size: 18px;
+  line-height: 120%;
+  text-align:   justify-all;
 }
 
 .text-block-2 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   color: #485462;
   font-size: 12px;
   line-height: 12px;
   letter-spacing: 2px;
+   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
 }
 
 .list {
-  font-family: Lora, sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #848d96;
   font-size: 16px;
   line-height: 160%;
@@ -90,8 +95,8 @@ a:hover{
 }
 
 .rightcontent {
-  overflow: auto;
-  padding: 120px;
+  overflow: flex;
+  padding: 10px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -138,6 +143,7 @@ a:hover{
 .bio-links {
   border-bottom: 1px solid #848d96;
   text-decoration: none;
+  font-family: 'Roboto', sans-serif;
 }
 
 .credit-links {
@@ -150,7 +156,7 @@ a:hover{
   top: 0px;
   display: block;
   min-height: 100vh;
-  min-width: 100%;
+  min-width: 80%;
   -webkit-align-self: flex-start;
   -ms-flex-item-align: start;
   align-self: flex-start;
@@ -177,8 +183,8 @@ a:hover{
   }
 
   .rightcontent {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 
   .links {
