@@ -29,10 +29,18 @@ body {
 /*ul { margin: 0; padding: 0; }*/
 
 /* LIST */
+
+ul.div-em-colunas {
+    -webkit-column-count:2; /* Chrome, Safari, Opera */
+    -moz-column-count:2;    /* Firefox */
+    column-count:2;         /* padrão */
+}
+
 ul {
         list-style: disc;
         margin: 0 0 2em 0;
         padding-left: 1em;
+
     }
 
         ul li {
