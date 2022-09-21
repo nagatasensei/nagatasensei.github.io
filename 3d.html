@@ -1,328 +1,258 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-	<meta charset="utf-8">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-	<title>Prof.Leandro Nagata - Impressão 3D</title>
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
 
 
+    <title>Prof.Leandro Nagata- Impressão 3D</title>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
 
-		<style>
-		body{background:black;
-			color:white;
-			font-family:roboto;
-			font-size: 28px;
-			font-weight: 300;
-			position: relative;
-			height:100%;
- 			min-height: 100vh;
-			height: 100%;
-			}
-		a {
-			color: #FFF;  
-			}
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
 
-		a:hover { 
-		color: #33ccff; 
-		}
-
-		h1,h2,h3 { font-weight: 300;
-		    text-align:center; 
-		font-family:roboto;}
-		    
-		    h2{
-		    	font-weight: bold;
-		    }
-		    h2:hover{
-  	color: #33ccff;
-  }
-
-		    /*li {
- 			 display: inline;
-			}*/
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
+h1{
+  display: flex;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
+h2{
+  text-align: center;
 }
 
-.active {
-  background-color: #4CAF50;
+mark{
+  background-color: #33ccff;
+  color: black;
 }
 
-.header{
-	background-image: url('img/minku-kang-aCniNTiIFd8-unsplash.jpg');
+
+      .header{
+  background-image: url('img/minku-kang-aCniNTiIFd8-unsplash.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  padding:  75px 75px;
+  padding:  100px 100px;
   /*padding-bottom: 15px;*/
 }
 
+a {
+      color: #001;  
+      text-align: center;
+      text-decoration: none;
+      font-style: italic;
+      }
 
+    a:hover { 
+    color: #33ccff; 
+    }
 
-/*
-Highlight
-*/
-mark{
-	background-color: #33ccff;
-	color: black;
-}
-
-section {
-  display: block;
-}
-
-.footer {
+    .footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #333;
+  background-color: #000;
   color: white;
   text-align: center;
-  font-size: 12px;
-}
-
-.sec1{
-	background-color: #666;
-	color: white;
-	font-size: 22px;
-	padding-left: 10em;
-	padding-right:10em ;
-	text-align: left;
-}
-
-.sec2{
-	background-color: #000;
-	color: white;
-	font-size: 22px;
-	padding-left: 10em;
-	padding-right: 10em;
-	text-align: right;
-}
-
-.sec3{
-	background-color: #666;
-	color: white;
-	font-size: 22px;
-padding-left: 10em;
-	padding-right: 10em;
-}
-
-.sec4{
-	background-color: #000;
-	color: white;
-	font-size: 22px;
-padding-left: 10em;
-	padding-right: 10em;
+  font-size: 14px;
 }
 
 
-@media screen and (max-width: 768px) {
-  img {
-    width: 170px;
-    height: 170px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  h1 {
-    display: block;
-    font-family: sans-serif, arial, verdana, lucida;
-  }
-  h2 {
-  	margin-top: 2em;
-  	padding-top: 2em;
-  	display: block;
-    text-align: center;
-  }
+    </style>
 
-
-  p {
-    width: 100%;
-    padding: 10px;
-  }
-  /* Home Page */
-  .column {
-    width: 100%;
-  }
-}
-
-.parent {
-  display: flex; /* Where the mobile part begins */
-  justify-content: center;
-  text-align: center;
-  flex-wrap: wrap;
-  padding: 50px 0 0 30px;
-}
-
-.parent div {
-  height: 200px;
-  width: 300px;
-}
-
-img {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-
-}
-
-.center{
-	display: block;
-  margin-left: auto;
-  margin-right: auto;
-  /*width: 50%;*/
-}
-
-/*div{
-	column-count: 2;
-}*/
-
-.noborder{
-	border-radius: 0%;
-}
-
-
-
-
-			</style>
-	</head>
-
-	<body>
-<div class="header">
-	<!--<img src="img/minku-kang-aCniNTiIFd8-unsplash.jpg">-->
-	<h1><mark  id="home">Prof.Leandro Nagata- Impressão 3D</mark></h1>
+    
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header">
+  <!--<img src="img/minku-kang-aCniNTiIFd8-unsplash.jpg">-->
+  <h1 align="center"><mark  id="home">Prof.Leandro Nagata- Impressão 3D</mark></h1>
 </div>
-	
-	<ul>
-		<li><a href="#home">Home</a></li>
-		<li><a href="#presentation">Apresentações</a></li>
-		<li><a href="#tinkercad">Tinkercad</a></li>
-		<li><a href="#softwares">Softwares</a></li>
-	</ul>
-	
-	<div class="row">
-		<section class="sec1">
-			<br>
-			 
 
-    <div >
-		<h2 >Bem vindos!</h2>
-			<p>Aqui vocês encontrarão os conteúdos apresentados nas aulas, bem como algum material adicional que disponibilizarei na medida do tempo.</p>
-			<p>Espero que vocês curtam!</p>
-			
-				<img src="img/minku-kang-aCniNTiIFd8-unsplash.jpg" class="center">
-		<br>
-		</div>
-		</section>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#home">Home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link " aria-current="page" href="#presentation">Apresentações</a>
+        <a class="nav-link" href="#tinkercad">Tinkercad</a>
+        <a class="nav-link" href="#softwares">Softwares</a>
+        <!--<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
+      </div>
+    </div>
+  </div>
+</nav>
+    <!--<h1>Hello, world!</h1>-->
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+      -->
+      <main>
+
+  <!--<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Example headline.</h1>
+            <p>Some representative placeholder content for the first slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Another example headline.</h1>
+            <p>Some representative placeholder content for the second slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>One more for good measure.</h1>
+            <p>Some representative placeholder content for the third slide of this carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> -->
+
+
+  
+
+    <!-- START THE FEATURETTES -->
+
+    
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Bem vindos! <!--<span class="text-muted">It’ll blow your mind.</span>--></h2>
+        <p class="lead">Aqui vocês encontrarão os conteúdos apresentados nas aulas, bem como algum material adicional que disponibilizarei na medida do tempo.</p>
+        <p class="lead">Espero que vocês curtam!</p>
+      </div>
+      <div class="col-md-5">
+        <img src="img/minku-kang-aCniNTiIFd8-unsplash.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>home</title><rect width="100%" height="100%" fill="#eee"/><!--<text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>-->
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette" id="presentation">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Apresentações<!--<span class="text-muted">See for yourself.</span>--></h2>
+        <p class="lead">Aqui vocês encontrarão as apresentações usadas nas aulas.</p>
+        <p class="lead"><a href="https://drive.google.com/drive/folders/1VSvaSdxomF6FHYu_GtSQ8lsJhrnceLeM?usp=sharing" target="_blank">Acesse aqui</a></p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="img/osman-talha-dikyar-NMCABEhN0RE-unsplash.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette" id="tinkercad">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Tinkercad<!--<span class="text-muted">Checkmate.</span>--></h2>
+        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+        <p class="lead"><a href="https://drive.google.com/drive/folders/1VSvaSdxomF6FHYu_GtSQ8lsJhrnceLeM?usp=sharing" target="_blank">Acesse aqui</a></p>
+      </div>
+      <div class="col-md-5">
+        <img src="img/tinkercad.png"class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><!--<title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>-->
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+      <div class="row featurette" id="softwares">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Softwares<!--<span class="text-muted">Checkmate.</span>--></h2>
+        <p class="lead">Aqui vocês poderão acessar os sites dos softwares apresentados na aula.</p>
+        <!--<p class="lead"><a href="https://drive.google.com/drive/folders/1VSvaSdxomF6FHYu_GtSQ8lsJhrnceLeM?usp=sharing" target="_blank">Acesse aqui</a></p>-->
+        <h3 align="center">Fatiadores</h3>
+        
+        <p><a href="www.ultimaker.com/software/ultimaker-cura" target="_blank">Ultimaker Cura</a></p>
+        <p><a href="www.prusa3d.com/page/prusaslicer_424/" target="_blank">Prusa Slicer</a></p>
+        <p><a href="www.astroprint.com" target="_blank">Astroprint</a></p>
+        
+        <br>
+        
+        <h3 align="center">Criação (Modelagem Orgânica ou Paramétrica)</h3>
+        <p><a href="https://www.meshmixer.com/download.html" target="_blank">Autodesk Meshmixer</a></p>
+        <p><a href="https://www.autodesk.com/products/fusion-360/free-trial" target="_blank">Autodesk Fusion360</a></p>
+        <p><a href="https://www.blender.org/" target="_blank">Blender</a></p>
+        <p><a href="https://www.autodesk.com.br/products/3ds-max/free-trial" target="_blank">Autodesk 3DS Max</a></p>
+        <br>
+        <br>
+      </div>
+      <div class="col-md-5">
+        <p><img src="img/cura-ui-idea.jpg.7ff0616de3085e0d62f7522177860b95.jpg"class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"></p><!--<title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>-->
+        <br>
+      </div>
+        
+
+      
+    </div>
+
+  </div><!-- /.container -->
+</main>
+  </body>
+  <footer class="footer">
+  <!--<footer class="footer mt-auto py-3 bg-light">-->
+  <div class="container">
+    <span class="text-muted">prof.leandronagata.com.br - Site desenvolvido e mantido pelo prof.Leandro Nagata - 2022</p>
 </div>
-	
-
-	<div>
-		<section id="presentation" class="sec2">
-			<br>
-			<div>
-				<br>
-				<br>
-			<h2 >Apresentações</h2>
-				<p>Aqui vocês encontrarão as apresentações usadas nas aulas.</p>
-				<p><a href="https://drive.google.com/drive/folders/1VSvaSdxomF6FHYu_GtSQ8lsJhrnceLeM?usp=sharing" target="_blank">Acesse aqui</a></p>
-				<img src="img/osman-talha-dikyar-NMCABEhN0RE-unsplash.jpg" class="center">
-				<br>
-				<br>
-			</div>
-		</section>
-	</div>
-
-
-	<div >
-		<section id="tinkercad" class="sec3">
-			<br>
-			<div>
-				<br>
-				<br>
-			<h2 >Tinkercad</h2>
-				<p>Aqui vocês podem acessar a sala do Tinkercad deste curso</p>
-				<p><a href="https://www.tinkercad.com/joinclass/WLBNHWHCHHT5" target="_blank">Tinkercad</a></p>
-				
-				<a href="https://www.tinkercad.com/joinclass/WLBNHWHCHHT5" target="_blank"><img src="img/tinkercad.png"class="noborder center" ></a>
-
-				<br>
-			</div>
-			<br>
-			<br>
-			<br>
-		</section>
-		<br>
-	</div>
-
-	<div >
-		<section id="softwares" class="sec4">
-			
-			<div>
-				<br>
-				<br>
-			<h2 >Lista de Softwares</h2>
-				<p>Aqui vocês podem encontrar os softwares mencionados na aula</p>
-				<h3>Fatiadores</h3>
-				
-				<p><a href="www.ultimaker.com/software/ultimaker-cura" target="_blank">Ultimaker Cura</a></p>
-				<p><a href="www.prusa3d.com/page/prusaslicer_424/" target="_blank">Prusa Slicer</a></p>
-				<p><a href="www.astroprint.com" target="_blank">Astroprint</a></p>
-				
-				<br></div>
-				<div>
-				<h3>Criação (Modelagem Orgânica ou Paramétrica)</h3>
-				<p><a href="https://www.meshmixer.com/download.html" target="_blank">Autodesk Meshmixer</a></p>
-				<p><a href="https://www.autodesk.com/products/fusion-360/free-trial" target="_blank">Autodesk Fusion360</a></p>
-				<p><a href="https://www.blender.org/" target="_blank">Blender</a></p>
-				<p><a href="https://www.autodesk.com.br/products/3ds-max/free-trial" target="_blank">Autodesk 3DS Max</a></p>
-				<br>
-				<br>
-			</div>
-		</section>
-	</div>
-	<!--
-<p>The navbar will <strong>stick</strong> to the top when you reach its scroll position.</p>
-<p><strong>Note:</strong> Internet Explorer do not support sticky positioning and Safari requires a -webkit- prefix.</p>
-<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-
--->
-<div class="footer">
-  <p>prof.leandronagata.com.br - Site desenvolvido e mantido pelo prof.Leandro Nagata - 2022</p>
-</div>
-	</body>
 </html>
