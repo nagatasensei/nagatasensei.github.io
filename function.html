@@ -1,27 +1,29 @@
-<p>Function vprisma(largura, comprimento, altura)
+<p>Function prisma(largura, comprimento, altura)
 <br>
-    vprisma = largura * comprimento * altura
+    prisma = largura * comprimento * altura
     <br>
     End Function
     <br>
+	
 	<br>
-    Function vcubo(lado)<br>
-    vcubo = (lado) ^ 3<br>
+    Function cilindro(raio, altura)<br>
+    cilindro = (WorksheetFunction.Pi) * ((raio) ^ 2) * altura<br>
     End Function
     <br>
 	<br>
-    Function vcil(raio, altura)<br>
-    vcil = (WorksheetFunction.Pi) * ((raio) ^ 2) * altura<br>
-    End Function
-    <br>
-	<br>
-    Function vesfera(raio)<br>
-    vesfera = (4 / 3) * (WorksheetFunction.Pi) * ((raio) ^ 3)<br>
+    Function esfera(raio)<br>
+    vsfera = (4 / 3) * (WorksheetFunction.Pi) * ((raio) ^ 3)<br>
     
     End Function<br>
 	<br>
-    Function vcone(raio, altura)<br>
+    Function cone(raio, altura)<br>
     
-    vcone = (1 / 3) * (WorksheetFunction.Pi) * ((raio) ^ 2) * altura<br>    
+    vone = (1 / 3) * (WorksheetFunction.Pi) * ((raio) ^ 2) * altura<br>    
     End Function<br>
+<br>
+<br>
+    Function piramide(comprimento, altura)<br>
+    piramide = ((comprimento) ^ 2) * (altura) / 3<br>
+    End Function<br>
+</br>
 </p>
