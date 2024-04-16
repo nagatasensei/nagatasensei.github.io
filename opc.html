@@ -4,3 +4,27 @@
 
 <h1>Função Aula 15/04/2024</h1>
 =SE(B1="Cubo";comprimento^3;SE(B1="Cilindro";PI()*(raio^2)*altura;SE(B1="Cone";(1/3)*PI()*(raio^2)*altura;SE(B1="Esfera";(4/3)*PI()*raio^3;SE(B1="Prisma";altura*comprimento*largura;SE(B1="Pirâmide";((comprimento^2)*altura)/3;"Selecione uma forma geométrica"))))))
+
+<p>Function vprisma(largura, comprimento, altura)
+<br>
+    vprisma = largura * comprimento * altura
+    <br>
+    End Function
+    <br>
+    Function vcubo(lado)
+    vcubo = (lado) ^ 3
+    End Function
+    <br>
+    Function vcil(raio, altura)
+    vcil = (WorksheetFunction.Pi) * ((raio) ^ 2) * altura
+    End Function
+    <br>
+    Function vesfera(raio)<br>
+    vesfera = (4 / 3) * (WorksheetFunction.Pi) * ((raio) ^ 3)<br>
+    
+    End Function<br>
+    Function vcone(raio, altura)<br>
+    
+    vcone = (1 / 3) * (WorksheetFunction.Pi) * ((raio) ^ 2) * altura<br>    
+    End Function<br>
+</p>
