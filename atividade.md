@@ -1,5 +1,5 @@
 
-Atividade:
+**Atividade:**
 
 Pesquise sobre o que é DNS, em seguida vá para o próximo passo,
 
@@ -10,7 +10,8 @@ O texto deverá incluir a pesquisa anterior e deverá ter a seguinte formataçã
 	- Corpo do texto: Fonte Arial, Tamanho 12, alinhamento justificado, Deslocamento na primeira linha de 1,25cm, espaçamento de 1,5.
 	
 	
-Texto: Como configuar um DNS alternativo no Windows.	
+**Texto: Como configuar um DNS alternativo no Windows.**
+
 
 Primeiro, acesse o Painel de Controle e clique em 'Rede e Internet'. 
 Em seguida, clique em 'Central de Rede e Compartilhamento' e selecione a conexão que está utilizando, seja ela Wi-Fi ou Ethernet. 
