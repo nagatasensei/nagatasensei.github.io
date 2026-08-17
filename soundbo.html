@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nagata's Soundboard</title>
+  </head>
+<style>
+  /* Base Navbar Layout */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .nav-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+  }
+
+  /* Tab Container */
+  .nav-tabs {
+    display: flex;
+    position: relative;
+    gap: 1.5rem;
+  }
+
+  /* Tab Buttons */
+  .tab-btn {
+    background: none;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+
+  .tab-btn:hover {
+    color: #007bff;
+  }
+
+  .tab-btn.active {
+    color: #007bff;
+  }
+
+  /* Sliding Indicator Line */
+  .tab-indicator {
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    background-color: #007bff;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 2px;
+  }
+
+  /* Tab Panels */
+  .tab-panel {
+    display: none;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 1.5rem 2rem;
+  }
+
+  .tab-panel.active {
+    display: flex;
+  }
+</style>
+
+<nav class="navbar">
+  <div class="nav-logo">Brand</div>
+
+  <!-- Tab Navigation Wrapper -->
+  <div class="nav-tabs" role="tablist">
+    <button class="tab-btn active" role="tab" aria-selected="true" data-target="home">Home</button>
+    <button class="tab-btn" role="tab" aria-selected="false" data-target="features">Features</button>
+    <button class="tab-btn" role="tab" aria-selected="false" data-target="pricing">Pricing</button>
+    <button class="tab-btn" role="tab" aria-selected="false" data-target="contact">Contact</button>
+    <!-- Sliding indicator line -->
+    <span class="tab-indicator"></span>
+  </div>
+</nav>
+
+<!-- Home panel -->
+<div id="home" class="tab-panel active">
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/rojao-dilera-89697/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/a-risada-do-kiko-65965/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/aaal-41211/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/achou-errado-otario-87297/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/acorda-monark-17462/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/agora-to-afim-de-relaxar/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/ah-agora-eu-entendi-67080/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/ahh-gracinha-50417/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/ai-pai-para/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/ai-que-burro-da-0-pra-ele/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/ai-que-delicia-mickey-78918/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/aii-mamae-56629/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/alborghetti-eu-sou-louco/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/banheira-do-gugu-tema/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/beber-veneno-27101/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/belessa-kapiaaao/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/bem-te-vi-passaro-58874/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/boa-noite-jornal-do-boris/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/bolota-de-coco-agarrado-na-glote-64529/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/bom-dia-disgraca-chaves-ytpbr-prof-girafales-19607/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/bom-dia-hadouken-5317/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/bom-dia-magnata-66198/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/brasil-e-bagunca-choque-de-cultura-38184/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/buzina-dilera-35795/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/c-c-c-combo-breaker/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/cabra-safado-60685/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/cavalo-rodrigo-faro-92077/embed/" frameborder="0" scrolling="no"></iframe>
+</div>
+
+<!-- Features panel -->
+<div id="features" class="tab-panel">
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/chaves-isso-isso-isso-33188/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/chaves-musica-triste/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/chaves-te-agarro-pela-cabeca-e-te-jooj-61836/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/dilera-aiiiiinn-gugu-22209/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/dilera-buzina-7922/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/dilera-guguu-72810/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/disgraca-2141/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/disgraca-dilera-78982/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/djavu-vinheta-19959/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/e-brincadeira-hein-rodrigo-faro-25623/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/e-muita-falcatrua-vadiagem/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/e-tarde-demais-96506/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/eeeeeeeeuuuuuuuuuuuuuuu/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/ele-g0sta-33449/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/ele-goooooooooooooosta-73118/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/faustao-rap-do-ovo-46619/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/foi-o-pi-diddy-59357/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/gil-brother-away-caracas-porra-7580/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/gil-brother-para-com-essa-p-61927/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/gluglu/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/ie-ie/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/iiiiiiihhhhhhhhhaaaaaaaaaa-reverso-36285/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/kassinao-70821/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/la-ele-16021/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/lisinho-como-uma-garrafinha-away-88397/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/maldito-o-homem-cariani-65141/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/mama-say-mama-sa-mamacosa-39941/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/man-se-tem-demencia/embed/" frameborder="0" scrolling="no"></iframe>
+</div>
+
+<!-- Pricing panel -->
+<div id="pricing" class="tab-panel">
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/manoel-gomes-58916/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/manoel-gomes-gemidim-67899/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/manoel-gomes-parabens-64235/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/me-chama-de-lord-44250/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/mermao-seja-objetivo-nao-gosto-de-ser-58618/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/meu-byd-32983/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/meu-deus-meu-senhor-87670/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/meu-ratiou-parca-63077/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/michael-jackson-auw-32919/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/michael-jackson-hee-hee-40277/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/michael-jackson-wooow/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/no-ceu-tem-pao/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/no-e-muito-cremoso-47184/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/o-ovo-e-do-povo/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/olha-esse-desgracado-de-novo-a/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/onca-serjao/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/ovelha-sem-voce-nao-viverei/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/parabens-do-sr-donizildo-33015/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/pare/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/pica-pau-bolinha-de-golfe-52637/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/pichuruco-igor-guimaraes-37244/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/preconceito-e-coisa-de-cigano-/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/que-demais-que-delicia-88642/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/que-e-isso-meu-filho-calma/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/que-gil-brother-away/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/que-merda-hein-alborghetti-3754/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/quero-cafe-quero-cafe/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/rapaz-xaropinho-ratinho-20505/embed/" frameborder="0" scrolling="no"></iframe>
+</div>
+
+<!-- Contact panel -->
+<div id="contact" class="tab-panel">
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/renato-cariani-ie-53883/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/risada-do-mal-michael-jackson-26070/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/risada-quico-chaves-4668/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/risada-zacarias-22135/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/risada-zacarias-burocrata/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/ritmo-de-festa/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/rodrigo-faro-falando-gugu-45605/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/rufem-os-tambores-9470/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/rusbe-99661/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/salve-familia-12852/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/sei-la-mil-tretas/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/sera-que-sou-ga-36657/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/sergio-sacani-complicado-isso-ai-cara-84844/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/seu-madruga-nossa/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/som-do-zap-zap-estourado-15594/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/sou-foda-avassaladores-77154/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/stallone-cobra-cretino-97443/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/supercine-19358/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/ta-certa-a-indignacao-93297/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/ta-fechado-com-os-cara-89335/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/technoloyia-technologia-tecnologia-84060/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/tiririca-au-gostaria-de-merendar-51212/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/to-cagado-de-fome-22867/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/uepa-ratinho-539/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/ui-rodrigo-faro-92457/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/uiiiii-95860/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/uma-rapariga-e-bom-12157/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/vai-filhao-sergio-sacani-71900/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/valendooo/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/zacarias/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/ja-chegou-o-disco-voador/embed/" frameborder="0" scrolling="no"></iframe>
+  <iframe width="110" height="200" src="https://www.myinstants.com/instant/100-fezes-vinheteiro-20533/embed/" frameborder="0" scrolling="no"></iframe>
+</div>
+
+<script>
+const tabs = document.querySelectorAll('.tab-btn');
+const indicator = document.querySelector('.tab-indicator');
+const panels = document.querySelectorAll('.tab-panel');
+
+function updateIndicator(activeTab) {
+  indicator.style.width = `${activeTab.offsetWidth}px`;
+  indicator.style.left = `${activeTab.offsetLeft}px`;
+}
+
+function showPanel(targetId) {
+  panels.forEach(p => p.classList.toggle('active', p.id === targetId));
+}
+
+if (document.querySelector('.tab-btn.active')) {
+  updateIndicator(document.querySelector('.tab-btn.active'));
+}
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', (e) => {
+    tabs.forEach(t => {
+      t.classList.remove('active');
+      t.setAttribute('aria-selected', 'false');
+    });
+
+    e.target.classList.add('active');
+    e.target.setAttribute('aria-selected', 'true');
+
+    updateIndicator(e.target);
+
+    const targetId = e.target.getAttribute('data-target');
+    showPanel(targetId);
+    document.getElementById(targetId)?.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
+window.addEventListener('resize', () => {
+  const activeTab = document.querySelector('.tab-btn.active');
+  if (activeTab) updateIndicator(activeTab);
+});
+</script>
+</html>
