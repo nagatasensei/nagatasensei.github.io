@@ -2,76 +2,10 @@
 <html>
   <head>
     <title>Nagata's Soundboard</title>
+    <link rel="stylesheet" href="css/soundbo.css" type="text/css">
+    <script src="js/soundbo.js"></script>
   </head>
-<style>
-  /* Base Navbar Layout */
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #ffffff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-  }
 
-  .nav-logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #333;
-  }
-
-  /* Tab Container */
-  .nav-tabs {
-    display: flex;
-    position: relative;
-    gap: 1.5rem;
-  }
-
-  /* Tab Buttons */
-  .tab-btn {
-    background: none;
-    border: none;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    font-weight: 500;
-    color: #666;
-    cursor: pointer;
-    transition: color 0.3s ease;
-  }
-
-  .tab-btn:hover {
-    color: #007bff;
-  }
-
-  .tab-btn.active {
-    color: #007bff;
-  }
-
-  /* Sliding Indicator Line */
-  .tab-indicator {
-    position: absolute;
-    bottom: 0;
-    height: 3px;
-    background-color: #007bff;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    border-radius: 2px;
-  }
-
-  /* Tab Panels */
-  .tab-panel {
-    display: none;
-    flex-wrap: wrap;
-    gap: 8px;
-    padding: 1.5rem 2rem;
-  }
-
-  .tab-panel.active {
-    display: flex;
-  }
-</style>
 
 <nav class="navbar">
   <div class="nav-logo">Brand</div>
@@ -218,45 +152,5 @@
   <iframe width="110" height="200" src="https://www.myinstants.com/instant/100-fezes-vinheteiro-20533/embed/" frameborder="0" scrolling="no"></iframe>
 </div>
 
-<script>
-const tabs = document.querySelectorAll('.tab-btn');
-const indicator = document.querySelector('.tab-indicator');
-const panels = document.querySelectorAll('.tab-panel');
 
-function updateIndicator(activeTab) {
-  indicator.style.width = `${activeTab.offsetWidth}px`;
-  indicator.style.left = `${activeTab.offsetLeft}px`;
-}
-
-function showPanel(targetId) {
-  panels.forEach(p => p.classList.toggle('active', p.id === targetId));
-}
-
-if (document.querySelector('.tab-btn.active')) {
-  updateIndicator(document.querySelector('.tab-btn.active'));
-}
-
-tabs.forEach(tab => {
-  tab.addEventListener('click', (e) => {
-    tabs.forEach(t => {
-      t.classList.remove('active');
-      t.setAttribute('aria-selected', 'false');
-    });
-
-    e.target.classList.add('active');
-    e.target.setAttribute('aria-selected', 'true');
-
-    updateIndicator(e.target);
-
-    const targetId = e.target.getAttribute('data-target');
-    showPanel(targetId);
-    document.getElementById(targetId)?.scrollIntoView({ behavior: 'smooth' });
-  });
-});
-
-window.addEventListener('resize', () => {
-  const activeTab = document.querySelector('.tab-btn.active');
-  if (activeTab) updateIndicator(activeTab);
-});
-</script>
 </html>
