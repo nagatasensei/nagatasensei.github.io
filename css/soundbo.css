@@ -18,10 +18,23 @@
   .nav-logo {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #333;
+    /*color: #333;*/
     font-family: 'Henny Penny', system-ui;
     /*font-weight: 400;*/
     font-style: normal;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+   /* Clip the background to only show through the text characters */
+    background-clip: text;
+    -webkit-background-clip: text;
+  
+  /* Make the main text color clear so the background shows through */
+    color: transparent;
+  
+  /* Optional: keeps the gradient limited to the text width */
+    display: inline-block;     
   }
 
   /* Tab Container */
